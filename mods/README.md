@@ -1,18 +1,18 @@
 # Command Code mods registry
 
-This repo's [`mods.json`](./mods.json) is the community registry behind the
-[mods hub](https://commandcode.ai/mods). The hub reads this file live, so a merged
-PR here lists your mod within minutes — no website deploy.
+[`registry.json`](./registry.json) in this folder is the community registry behind the
+[mods hub](https://commandcode.ai/mods). The hub reads it live, so a merged PR here lists
+your mod within minutes — no website deploy.
 
 Two ways a mod gets listed:
 
 1. **Publish to npm with the `cmd-mod` keyword** — it is discovered automatically, no PR needed.
-2. **Open a PR against `mods.json`** — for git-only mods, or to add richer metadata. This is that path.
+2. **Open a PR against `registry.json`** — for git-only mods, or to add richer metadata. This is that path.
 
 ## Add your mod
 
-Append one entry to the `mods` array in [`mods.json`](./mods.json). Editors validate it
-against [`mods.schema.json`](./mods.schema.json).
+Append one entry to the `mods` array in [`registry.json`](./registry.json). Editors validate it
+against [`registry.schema.json`](./registry.schema.json).
 
 ```json
 {
